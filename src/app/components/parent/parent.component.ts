@@ -16,8 +16,9 @@ export class ParentComponent implements OnInit {
   }
   table(e: any) {
     var i = 10;
+    var table_div:any= document.querySelector(".table-div");
+            table_div.innerHTML="";
     for (var a = 1; a <= i; a++) {
-      // this.cars.push(`${e}x${a}=${a*e}`)
       if(e==''){
         var err_msg:any = document.querySelector("#Err_msg");
         err_msg.innerHTML="Plz Enter the number";
@@ -25,7 +26,6 @@ export class ParentComponent implements OnInit {
         table_div.innerHTML="";
       }
       else{
-       
       var tr: any = document.createElement("tr");
       var td: any = document.createElement("td");
       td.innerHTML = e * a;
