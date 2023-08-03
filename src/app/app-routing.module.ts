@@ -6,7 +6,6 @@ import { CubeGeneratorComponent } from 'src/app/cube-generator/cube-generator.co
 import { SqureGeneratorComponent } from 'src/app/squre-generator/squre-generator.component';
 
 const routes: Routes = [
-
     {path: 'Multable', component: ParentComponent},
     {path: 'About', component: AboutComponentComponent},
     {path: 'Cube', component: CubeGeneratorComponent},

@@ -28,13 +28,11 @@ export class ParentComponent implements OnInit {
        
       var tr: any = document.createElement("tr");
       var td: any = document.createElement("td");
-     
       td.innerHTML = e * a;
       tr.appendChild(td);
       document.querySelector(".table-div")?.appendChild(tr);
       // var table_div:any= document.querySelector(".table-div");
       // table_div.innerHTML="";
-      
       }
     }
 
