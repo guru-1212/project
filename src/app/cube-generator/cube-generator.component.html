@@ -1,0 +1,49 @@
+<!-- <h4 class="myClass">--- Table Generator ---</h4> -->
+<!-- <button (click)="Table()">Click here</button> -->
+<!-- <input type="number" #phone>
+
+<button (click)="name(phone.value)">save</button> -->
+<div class="Main-parent-container">
+    <div class="container d-flex justify-content-center">
+      <div class="border p-2  w-50 small-width table-class bg-light rounded-2">
+        <h3 class="text-center Main-heading-text">
+          --- Online Cube Generator ---
+        </h3>
+        <div class="dt text-center">
+         
+          <label class="font_size_family">Enter Number</label>
+        </div>
+        <div class="dd mb-2 input-parent-div">
+            
+          <input
+            placeholder="Plz Enter Number"
+            className="form-control w-50"
+            type="text"
+            #val
+          >
+          <div class="text-danger" id="Err_msg"></div>
+        </div>
+       <div class="d-flex justify-content-center">
+        <!-- <button (click)="name(phone.value)">save</button>  -->
+       <button (click)="cube(val.value)" class="Get-table btn btn-success" >
+          Get Cube
+        </button>
+       </div>
+        <div class="table-div-main">
+          <table class="table table-hover w-100 p-4">
+            <thead>
+              <tr class="Table-header text-center">
+                <span class="Table-heading-span">
+                  <span class="Reqested-number"></span>
+                </span>
+              </tr>
+            </thead>
+            <tbody class="Cube-data text-center text-success">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+

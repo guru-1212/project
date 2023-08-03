@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  *{
+    font-family: cursive;
+  }
+  .reasult-added-class{
+    color: black;
+    font-family: cursive;
+    font-size: 18px;
+    text-align: center;
+  
+  }
+  .Table-heading-span{
+    color: black;
+    font-family: cursive;
+    font-size: 18px;
+  }
+  .Main-parent-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100vh; */
+    width: 100%;
+    padding: 20px;
+  }
+  .font_size_family{
+    color: black;
+    font-family: cursive;
+    font-size: 18px;
+  }
+  .Reqested-number{
+    /* text-decoration: underline; */
+    color: green;
+    font-weight: bold;
+  
+  }
+  
+  .input-parent-div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cube-reasult{
+    font-size: 35px;
+    color: green;
+    font-weight: bold;
+  }
+  input{
+    border-radius: 5px;
+  }
+  @media (max-width:768px){
+    .Main-heading-text{
+        font-size:16px;
+    }
+    .table-class.small-width{
+        width: 100% !important;
+    }
+  }
+  
