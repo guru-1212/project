@@ -1,0 +1,50 @@
+*{
+    font-family: cursive;
+}
+h5{
+    margin-bottom: unset !important;
+}
+.custom-div {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+.div-1 {
+    background-color: #3498db;
+}
+.div-1:hover {
+    background-color: #0032d6;
+}
+
+.div-2 {
+    background-color: #e74c3c;
+}
+.div-2:hover {
+    background-color: #ce1500;
+}
+
+.div-3 {
+    background-color: #2ecc71;
+}
+.div-3:hover {
+    background-color: #0ed607;
+}
+
+.div-4 {
+    background-color: #f39c12;
+}
+.div-4:hover{
+    background-color: #eb6004ef;
+}
+.custom-div{
+    cursor: pointer;
+    transition-duration: 0.5s; 
+}
+.custom-div:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 5px 2px;
+    transition-duration: 0.5s;
+}

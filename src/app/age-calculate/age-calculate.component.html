@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-center">Age Calculator</h4>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="birthdate">Enter Your Birthdate:</label>
+              <input type="date" id="birthdate" class="form-control datepicker">
+              <div id="err_msg" class="text-danger text-center"></div>
+            </div>
+           <div class="text-center mt-2">
+            <button class="btn btn-warning btn-block" (click)="calculateAge()">Calculate Age</button>
+           </div>
+            <div class="mt-3">
+              <p class="text-success text-center">Your age is : <span id="ageOutput" class="text-danger"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

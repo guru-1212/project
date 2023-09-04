@@ -1,3 +1,7 @@
+*{
+    font-family: cursive !important;
+
+}
 .navbar .nav-link:hover{
     color: red !important;
     /* transform: scale(1.1); */
@@ -9,4 +13,85 @@ button{
 }
 .navbar-brand{
     font-weight: bold;
+    font-size: 30px;
 }
+.btn.btn-outline-success.Search-btn{
+    border-color: green !important;
+    border: 1px solid green !important;
+}
+.Math_Let1 {
+    animation-name: color_change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5ms;
+  }
+.Math_Let2 {
+    animation-name: color_change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+  }
+.Math_Let3 {
+    animation-name: color_change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+  }
+.Math_Let4 {
+    animation-name: color_change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3ms;
+  }
+.Math_Let5 {
+    animation-name: color_change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 4ms;
+  }
+.Math_Let6 {
+    animation-name: color_change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5ms;
+  }
+.Math_Let7 {
+    animation-name: color_change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 6ms;
+  }
+.Math_Let8 {
+    animation-name: color_change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 7ms;
+  }
+
+
+  /* Standard syntax */
+@keyframes color_change {
+    0% {
+      color: orangered;
+    }
+    25% {
+      color: black;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: blue;
+    }
+    100% {
+      color: red;
+    }
+  }

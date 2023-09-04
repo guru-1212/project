@@ -1,0 +1,56 @@
+*{
+    font-family: cursive;
+}
+.right-number-count, .wrong-number-count ,.random-first-number , .random-second-number{
+    font-weight: bold;
+    font-size: 50px;
+}
+.arithmatic_symbol{
+    font-size: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.random-number-main-div{
+    max-width: 600px;
+    border: 2px solid red !important;
+    border-radius: 5px;
+}
+.user-inter-answer{
+    border: 2px solid green;
+}
+.Start-btn{
+    height: 50px;
+}
+.wrong_count, .right_count{
+    border: unset;
+    font-size: 30px !important;
+    
+}
+.wront_coung, .right_count:focus-visible{
+    border: unset;
+    outline: unset !important;
+}
+.Timer_counting{
+    font-size: 30px !important;
+    font-weight: bolder;
+}
+.counting-div.after_start{
+    display: block !important;
+}
+.after_start_lvl_btn_style{
+    display: none;
+}
+.Start-btn-main.level_selected{
+    display: block !important;
+}
+.select-game-level-text.after_select_level{
+    display: none;
+}
+// .game_data_loading_div{
+//     position: relative;
+//     top: -50px;
+// }
+.emoji-div{
+    position: absolute;
+    top: 25%;
+}

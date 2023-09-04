@@ -1,0 +1,36 @@
+.welcome-text{
+    align-items: center;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    font-weight: bold;
+    font-family: cursive;
+}
+.welcome-text {
+    animation-name: color_change;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes color_change {
+    0% {
+      color: orangered;
+      transform: translateX(30%);  
+    }
+    25% {
+      color: black;
+      transform: translateY(30%);  
+    }
+    50% {
+      color: green;
+      transform: translateX(-30%); 
+    }
+    75% {
+      color: blue;
+      transform: translateY(-30%); 
+    }
+    100% {
+      color: red;
+      transform: translateX(30%); 
+    }
+  }
