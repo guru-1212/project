@@ -64,7 +64,7 @@ const routes: Routes = [
     {path:'Unit_translator', component: UnitConvertComponent},
     // --------------------------------------------->
     {path: 'Balika_practice', component:APIPracticeComponent},
-    // {path: '', component:FooterComponent}
+    {path: '', component:DefaultHomeComponent}
 ];
 
 
