@@ -29,6 +29,7 @@ import { LoginStudentComponent } from './practice/student-data/login-student/log
 import { APIPracticeComponent } from './api-practice/api-practice.component';
 import { FooterComponent } from './footer/footer.component';
 import { ForLoopPracticeComponent } from './practice/for-loop-practice/for-loop-practice.component';
+import { NextStudentComponent } from './practice/student-data/add-student/next-student/next-student.component';
 
 
 const routes: Routes = [
@@ -49,12 +50,14 @@ const routes: Routes = [
     {path:'PostAPI' , component:PostMethodAPIComponent},
     {path:'for_loop_practice',component:ForLoopPracticeComponent},
     {path:'CRUD_studentData' , component:StudentDataComponent,children:[
-      {path:'CRUD_studentData/addstudent' , component:AddStudentComponent,outlet:'secondary'},
+      {path:'addstudent' , component:AddStudentComponent,children:[
+        {path:'next_student' , component:NextStudentComponent}
+      ]},
       
       // {path:'CRUD_studentData/editstudent' , component:EditStudentComponent},
-      {path:'CRUD_studentData/liststudent' ,component:StudentListComponent,outlet:'secondary'},
-      {path:'CRUD_studentData/register' , component:RegisterStudentComponent,outlet:'secondary'},
-      {path:'CRUD_studentData/LoginStudent' ,component:LoginStudentComponent,outlet:'secondary'}
+      {path:'liststudent' ,component:StudentListComponent},
+      {path:'register' , component:RegisterStudentComponent},
+      {path:'LoginStudent' ,component:LoginStudentComponent}
     ]},
    
     // -------- Tools Router LINKS ------------->
