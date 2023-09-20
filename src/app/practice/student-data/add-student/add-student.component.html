@@ -1,2 +1,10 @@
-<p>add-student works!</p>
+<div>
+    <form #studentForm = "ngForm" (ngSubmit)="addStudent(studentForm.value)">
+        <dt>Name</dt>
+        <dd><input type="text" name="name" placeholder="Enter Name" ngModel></dd>
+        <dt>Email</dt>
+        <dd><input type="email" name="email" id="email" placeholder="Enter Email" ngModel></dd>
+        <div><button type="submit">Add student</button></div>
+    </form>
+</div>
 <router-outlet></router-outlet>

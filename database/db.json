@@ -1,9 +1,39 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": 1,
+      "name": "Guru",
+      "email": "guru@gmail.com"
+    },
+    {
+      "name": "guru",
+      "email": "Guru@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "pravin",
+      "email": "Pravin@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Balika",
+      "email": "Balika@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "satish",
+      "email": "satish@gmail.com",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}
