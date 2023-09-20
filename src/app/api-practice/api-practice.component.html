@@ -1,0 +1,22 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <th>ID</th>
+            <th>Camera Name</th>
+            <th>Rover ID</th>
+            <th>Images</th>
+            <th>Landing Date</th>
+            <th>Launch Date</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let roverData of allData.photos"> 
+                <td>{{roverData.id}}</td>
+                <td>{{roverData.camera.name}}</td>
+                <td>{{roverData.camera.rover_id}}</td>
+                <td><a href="" target="_blank"><img src={{roverData.img_src}} alt="" width="100px" height="100px"></a></td>
+                <td>{{roverData.rover.landing_date}}</td>
+                <td>{{roverData.rover.launch_date}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,27 @@
+
+<div class="container">
+   <table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>PRICE</th>
+            <th>DESCRIPTION</th>
+            <th>CATEGORY</th>
+            <th>RATING</th>
+            <th>IMAGE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let items of AllProducts">
+            <td>{{items.id}}</td>
+            <td>{{items.title}}</td>
+            <td>{{items.price}}</td>
+            <td>{{items.description}}</td>
+            <td>{{items.category}}</td>
+            <td>{{items.rating.rate}}</td>
+            <td><img src={{items.image}} alt="Img not loded" width="100px" height="100px"></td>
+        </tr>
+    </tbody>
+   </table>
+</div>

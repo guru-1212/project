@@ -1,0 +1,40 @@
+<div class="container">
+    <form #userform="ngForm" (ngSubmit)="getUsers(userform.value)" class="w-50">
+        <div class="mb-2">
+            <dt>Name</dt>
+            <dd><input ngModel type="text" class="form-control" name="name" placeholder="Name" required></dd>
+        </div>
+        <div class="mb-2">
+            <dt>Gmail</dt>
+            <dd><input ngModel type="gmail" class="form-control" name="gmail" placeholder="Gmail" required></dd>
+        </div>
+        <div class="mb-2">
+            <dt>Password</dt>
+            <dd><input ngModel type="password" class="form-control" name="password" placeholder="Password" required></dd>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success">Save User</button>
+        </div>
+    </form>
+
+    <ul>
+        <div class="card text-center" *ngFor="let items of userData" style="width: 200px; height: 200px;">
+            <div class="card-header text-center d-flex justify-content-center">
+                <h4> User Data</h4><span class="cross_Delete" style="position: absolute; right: 0px;">X</span>
+            </div>
+            <div class="card-body">
+
+                <div>
+                    <dt>Name</dt>
+                    <dd>{{items.name}}</dd>
+                </div>
+                <div>
+                    <dt>Gmail</dt>
+                    <dd>{{items.gmail}}</dd>
+                </div>
+            </div>
+
+
+        </div>
+    </ul>
+</div>

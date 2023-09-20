@@ -1,0 +1,51 @@
+<h1 class="mt-4">Fetching Data Using services</h1>
+<div class="d-flex flex-wrap justify-content-between">
+    <div class="card mb-2" *ngFor="let item of products.products" style="width: 300px;">
+        <div class="card-header">
+            <div class="d-flex">
+                <dt>ID  : </dt>
+                <dd>{{item.id}}</dd>
+            </div>
+            <div class="d-flex">
+                <dt>Title  :</dt>
+                <dd>{{item.title}}</dd>
+            </div>
+            <div class="d-flex">
+                <dt>Brand  :</dt>
+                <dd>{{item.brand}}</dd>
+            </div>
+            <div class="d-flex">
+                <dt>Price  :</dt>
+                <dd [ngClass]="(item.price >= 200)? 'text-danger': '' ">{{item.price}}</dd>
+            </div>
+            <div class="d-flex">
+                <dt>Rating  :</dt>
+                <dd>{{item.rating}}</dd>
+            </div>
+        </div>
+        <div class="card-body">
+            <dt>Descriptioin</dt>
+            <dd>{{item.description}}</dd>
+            <dt>Image</dt>
+            <div class="text-center">
+                <img src={{item.thumbnail}} alt="" style="height: 250px; width: 200px;">
+            </div>
+            <div>
+                <dt>Related Images</dt>
+                <div class="d-flex flex-wrap">
+                    <div class="m-3" *ngFor="let img of item.images ; let i = index">
+                        <div>
+                            <img src={{img}} alt="" style="height: 80px; width: 80px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex">
+                <dt>Category  :</dt>
+                <dd>{{item.category}}</dd>
+            </div>
+        </div>
+    </div>
+</div>

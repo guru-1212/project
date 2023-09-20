@@ -1,0 +1,18 @@
+
+<div class="d-flex flex-wrap">
+    <div class="card border m-3" *ngFor="let items of mobiles_img.products" style="width: 300px;">
+        <div class="card-header">
+            <h2 class="text-center">{{items.id}}</h2>
+            <h3 class="text-center">{{items.brand}}</h3>
+        </div>
+        <div class="card-body text-center mb-2">
+            <img src={{items.thumbnail}} alt="" width="200px">
+            <div >
+                <p>{{items.description}}</p>
+            </div>
+        </div>
+        <div class="card-footer">
+            <h6>Price : {{items.price}}</h6>
+        </div>
+    </div>
+</div>

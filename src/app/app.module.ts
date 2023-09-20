@@ -21,6 +21,28 @@ import { BMICalculateComponent } from './bmi-calculate/bmi-calculate.component';
 
 import { FuelCostCalculatorComponent } from './fuel-cost-calculator/fuel-cost-calculator.component';
 import { DiscountPercentageCalculatorComponent } from './discount-percentage-calculator/discount-percentage-calculator.component';
+import { PracticeComponent } from './practice/practice.component';
+import { CompFistComponent } from './practice/comp-fist/comp-fist.component';
+import { CompSecondComponent } from './practice/comp-second/comp-second.component';
+import { DesignUtilityService } from './design-utility.service';
+// import { FetchingDataComponent } from './practice/fetching-data/fetching-data.component';
+import {HttpClientModule} from '@angular/common/http';
+import { FetchingDataComponent } from './fetching-data/fetching-data.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
+import { InputTypesChangeComponent } from './practice/input-types-change/input-types-change.component';
+import { FakestoreAPIComponent } from './practice/fakestore-api/fakestore-api.component'
+import { FakestoreServicesService } from './practice/fakestore-services.service';
+import { PostMethodAPIComponent } from './practice/post-method-api/post-method-api.component';
+import { FormsModule } from '@angular/forms';
+import { StudentDataComponent } from './practice/student-data/student-data.component';
+import { StudentListComponent } from './practice/student-data/student-list/student-list.component';
+import { AddStudentComponent } from './practice/student-data/add-student/add-student.component';
+import { EditStudentComponent } from './practice/student-data/edit-student/edit-student.component';
+import { LoginStudentComponent } from './practice/student-data/login-student/login-student.component';
+import { RegisterStudentComponent } from './practice/student-data/register-student/register-student.component';
+import { APIPracticeComponent } from './api-practice/api-practice.component';
+import { FooterComponent } from './footer/footer.component';
+// import { APIServiceComponent } from './api-practice/api-service/api-service.component';
 
 
 @NgModule({
@@ -44,13 +66,33 @@ import { DiscountPercentageCalculatorComponent } from './discount-percentage-cal
 
     FuelCostCalculatorComponent,
     DiscountPercentageCalculatorComponent,
+    PracticeComponent,
+    CompFistComponent,
+    CompSecondComponent,
+    FetchingDataComponent,
+    MobilesComponent,
+    InputTypesChangeComponent,
+    FakestoreAPIComponent,
+    PostMethodAPIComponent,
+    StudentDataComponent,
+    StudentListComponent,
+    AddStudentComponent,
+    EditStudentComponent,
+    LoginStudentComponent,
+    RegisterStudentComponent,
+    APIPracticeComponent,
+    FooterComponent,
+    // APIServiceComponent,
+    // FetchingDataComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [DesignUtilityService,FakestoreServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

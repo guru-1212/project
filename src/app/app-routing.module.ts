@@ -15,6 +15,20 @@ import { AgeCalculateComponent } from './age-calculate/age-calculate.component';
 import { BMICalculateComponent } from './bmi-calculate/bmi-calculate.component';
 import { FuelCostCalculatorComponent } from './fuel-cost-calculator/fuel-cost-calculator.component';
 import { UnitConvertComponent } from './unit-convert/unit-convert.component';
+import { PracticeComponent } from './practice/practice.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
+import { InputTypesChangeComponent } from './practice/input-types-change/input-types-change.component';
+import { FakestoreAPIComponent } from './practice/fakestore-api/fakestore-api.component';
+import { PostMethodAPIComponent } from './practice/post-method-api/post-method-api.component';
+import { StudentDataComponent } from './practice/student-data/student-data.component';
+import { AddStudentComponent } from './practice/student-data/add-student/add-student.component';
+import { EditStudentComponent } from './practice/student-data/edit-student/edit-student.component';
+import { StudentListComponent } from './practice/student-data/student-list/student-list.component';
+import { RegisterStudentComponent } from './practice/student-data/register-student/register-student.component';
+import { LoginStudentComponent } from './practice/student-data/login-student/login-student.component';
+import { APIPracticeComponent } from './api-practice/api-practice.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 const routes: Routes = [
     {path: 'Multable', component: ParentComponent},
@@ -27,14 +41,28 @@ const routes: Routes = [
     {path: 'DivisionGame', component: DivisionGameComponent},
     {path: 'SubstractionGame', component: SubstractionGameComponent},
     {path: 'Tools', component: ToolsComponent},
+    {path:'Practice', component:PracticeComponent},
+    {path:'Mobiles' , component:MobilesComponent},
+    {path:'inputValPractice' , component:InputTypesChangeComponent},
+    {path:'FakestoreAPI', component:FakestoreAPIComponent},
+    {path:'PostAPI' , component:PostMethodAPIComponent},
+    {path:'CRUD_studentData' , component:StudentDataComponent,children:[
+      {path:'CRUD_studentData/addstudent' , component:AddStudentComponent,outlet:'secondary'},
+      
+      // {path:'CRUD_studentData/editstudent' , component:EditStudentComponent},
+      {path:'CRUD_studentData/liststudent' ,component:StudentListComponent,outlet:'secondary'},
+      {path:'CRUD_studentData/register' , component:RegisterStudentComponent,outlet:'secondary'},
+      {path:'CRUD_studentData/LoginStudent' ,component:LoginStudentComponent,outlet:'secondary'}
+    ]},
+   
     // -------- Tools Router LINKS ------------->
     {path:'Age_calculator', component: AgeCalculateComponent},
     {path:'BMI_calculator', component: BMICalculateComponent},
     {path:'Fuel_cost_calculator', component: FuelCostCalculatorComponent},
     {path:'Unit_translator', component: UnitConvertComponent},
-
     // --------------------------------------------->
-    {path: '', component: DefaultHomeComponent}
+    {path: '', component:APIPracticeComponent},
+    {path: '', component:FooterComponent}
 ];
 
 
