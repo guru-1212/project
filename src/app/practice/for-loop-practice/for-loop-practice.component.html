@@ -1,0 +1,116 @@
+<div class="container">
+
+    <h2>Below table created using ngFor </h2>
+    <table class="table">
+        <thead>
+            <th>Country Names</th>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let country of countryNames">{{country}}</tr>
+        </tbody>
+
+    </table>
+    <h2>Another one data which is large data which shown in table format using ngFor </h2>
+    <table class="table">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>AGE</th>
+            <th>CITY</th>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let practicedata of practiceData">
+                <td>{{practicedata.id}}</td>
+                <td>{{practicedata.name}}</td>
+                <td>{{practicedata.age}}</td>
+                <td>{{practicedata.city}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Complecated data shown using ngFor in card format</h2>
+   <div class="d-flex justify-content-around mb-4 card-main-div">
+    <div class="card me-2 ms-2 mb-3" *ngFor="let complecatedata of complecatedData; let i = index" style="width:250px">
+        <div class="card-header d-flex">
+           <div>
+            <h6 class="text-center">Employee ID : {{complecatedata.id}}</h6>
+            <h6 class="text-center">Employee Name : {{complecatedata.name}}</h6>
+            <!-- <h6 class="text-center" [ngClass]="{'text-success': complecatedata.age >= 20 && complecatedata.age <= 29, 'text-danger' : complecatedata.age >=30 && complecatedata.age <= 40 }">Employee Age : {{complecatedata.age}}</h6> -->
+           </div>
+           <button class="button" [id]="complecatedata.id" style="height: 30px; width: 30px; border: unset; border-radius: 50%;"> X </button>
+        </div>
+        <div class="card-body">
+            <dt class="">Address </dt>
+                <dd> Street : {{complecatedata.address.street}}</dd>
+                <dd> City : {{complecatedata.address.city}}</dd>
+                <dd> Postal Code : {{complecatedata.address.postalCode}}</dd>
+        </div>
+        <div class="card-footer">
+            <dt>Hobbies</dt>
+           <div >
+            <ol>
+                <li *ngFor="let hobby of complecatedata.hobbies">{{hobby}}</li>
+            </ol>
+           </div>
+        </div>
+    </div>
+   </div>
+
+
+
+
+    <h2>Complecated data shown using ngIf condition  Age greater that 30 will show </h2>
+   <div class="d-flex justify-content-around mb-4 card-main-div">
+    
+    <div *ngFor="let complecatedata of complecatedData;">
+        <ng-template *ngIf="complecatedata.age >= 30" >
+            <div class="card me-2 ms-2 mb-3" style="width:250px" >
+                <div class="card-header d-flex">
+                   <div>
+                    <h6 class="text-center">Employee ID : {{complecatedata.id}}</h6>
+                    <h6 class="text-center">Employee Name : {{complecatedata.name}}</h6>
+                    <!-- <h6 class="text-center" [ngClass]="{'text-success': complecatedata.age >= 20 && complecatedata.age <= 29, 'text-danger' : complecatedata.age >=30 && complecatedata.age <= 40 }">Employee Age : {{complecatedata.age}}</h6> -->
+                   </div>
+                   <button class="button" [id]="complecatedata.id" style="height: 30px; width: 30px; border: unset; border-radius: 50%;"> X </button>
+                </div>
+                <div class="card-body">
+                    <dt class="">Address </dt>
+                        <dd> Street : {{complecatedata.address.street}}</dd>
+                        <dd> City : {{complecatedata.address.city}}</dd>
+                        <dd> Postal Code : {{complecatedata.address.postalCode}}</dd>
+                </div>
+                <div class="card-footer">
+                    <dt>Hobbies</dt>
+                   <div >
+                    <ol>
+                        <li *ngFor="let hobby of complecatedata.hobbies">{{hobby}}</li>
+                    </ol>
+                   </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+   </div>
+
+   <h1>  Below buttons functions we are using via services class -></h1>
+   <div class="main d-flex justify-content-between mb-4 mt-4 p-4" >
+     <!-- <app-comp-fist/> -->
+     <hr><hr>
+    <!-- <app-comp-second/> -->
+    <hr><hr>
+   
+    <hr><hr>
+ 
+
+   </div>
+   <div>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+   <div>
+    <!-- <app-fetching-data/> -->
+   </div>
+<div class="footer"></div>
+</div>
+

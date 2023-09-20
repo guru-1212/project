@@ -28,6 +28,7 @@ import { RegisterStudentComponent } from './practice/student-data/register-stude
 import { LoginStudentComponent } from './practice/student-data/login-student/login-student.component';
 import { APIPracticeComponent } from './api-practice/api-practice.component';
 import { FooterComponent } from './footer/footer.component';
+import { ForLoopPracticeComponent } from './practice/for-loop-practice/for-loop-practice.component';
 
 
 const routes: Routes = [
@@ -46,6 +47,7 @@ const routes: Routes = [
     {path:'inputValPractice' , component:InputTypesChangeComponent},
     {path:'FakestoreAPI', component:FakestoreAPIComponent},
     {path:'PostAPI' , component:PostMethodAPIComponent},
+    {path:'for_loop_practice',component:ForLoopPracticeComponent},
     {path:'CRUD_studentData' , component:StudentDataComponent,children:[
       {path:'CRUD_studentData/addstudent' , component:AddStudentComponent,outlet:'secondary'},
       
@@ -61,8 +63,8 @@ const routes: Routes = [
     {path:'Fuel_cost_calculator', component: FuelCostCalculatorComponent},
     {path:'Unit_translator', component: UnitConvertComponent},
     // --------------------------------------------->
-    {path: '', component:APIPracticeComponent},
-    {path: '', component:FooterComponent}
+    {path: 'Balika_practice', component:APIPracticeComponent},
+    // {path: '', component:FooterComponent}
 ];
 
 

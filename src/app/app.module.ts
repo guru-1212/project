@@ -42,6 +42,7 @@ import { LoginStudentComponent } from './practice/student-data/login-student/log
 import { RegisterStudentComponent } from './practice/student-data/register-student/register-student.component';
 import { APIPracticeComponent } from './api-practice/api-practice.component';
 import { FooterComponent } from './footer/footer.component';
+import { ForLoopPracticeComponent } from './practice/for-loop-practice/for-loop-practice.component';
 // import { APIServiceComponent } from './api-practice/api-service/api-service.component';
 
 
@@ -82,6 +83,7 @@ import { FooterComponent } from './footer/footer.component';
     RegisterStudentComponent,
     APIPracticeComponent,
     FooterComponent,
+    ForLoopPracticeComponent,
     // APIServiceComponent,
     // FetchingDataComponent,
 
