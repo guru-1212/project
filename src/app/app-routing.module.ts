@@ -30,6 +30,9 @@ import { APIPracticeComponent } from './api-practice/api-practice.component';
 import { FooterComponent } from './footer/footer.component';
 import { ForLoopPracticeComponent } from './practice/for-loop-practice/for-loop-practice.component';
 import { NextStudentComponent } from './practice/student-data/add-student/next-student/next-student.component';
+import { AppRegisterComponent } from './App_register/app-register/app-register.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { NavbarHeaderComponent } from './navBar/navbar-header/navbar-header.component';
 
 
 const routes: Routes = [
@@ -49,6 +52,9 @@ const routes: Routes = [
     {path:'FakestoreAPI', component:FakestoreAPIComponent},
     {path:'PostAPI' , component:PostMethodAPIComponent},
     {path:'for_loop_practice',component:ForLoopPracticeComponent},
+    {path:'register',component:AppRegisterComponent},
+    {path:'signin',component:SignInComponent},
+    {path:'Dashbord',component:NavbarHeaderComponent},
     {path:'CRUD_studentData' , component:StudentDataComponent,children:[
       {path:'addstudent' , component:AddStudentComponent,children:[
         {path:'next_student' , component:NextStudentComponent}
@@ -67,7 +73,7 @@ const routes: Routes = [
     {path:'Unit_translator', component: UnitConvertComponent},
     // --------------------------------------------->
     {path: 'Balika_practice', component:APIPracticeComponent},
-    {path: '', component:DefaultHomeComponent}
+    {path: '', component:AppRegisterComponent}
 ];
 
 

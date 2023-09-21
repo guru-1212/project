@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Guru",
+      "password": "Gurunath",
+      "email": "guru@gmail.com"
+    },
+    {
+      "name": "guru",
+      "email": "Guru@gmail.com",
+      "password": "Gurunath",
+      "id": 2
+    },
+    {
+      "name": "Gurunath",
+      "email": "guru@gmail.com",
+      "password": "Gurunath",
+      "id": 3
+    },
+    {
+      "name": "Gurunath",
+      "email": "inspire@123",
+      "password": "guru@123",
+      "id": 4
+    },
+    {
+      "name": "guru",
+      "email": "inspire@gmail.com",
+      "password": "Inspire@123",
+      "id": 5
+    },
+    {
+      "name": "balika",
+      "email": "balika@gmail.com",
+      "password": "Balika",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
