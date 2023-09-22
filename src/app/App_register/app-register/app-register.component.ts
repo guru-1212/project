@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppRegisterService } from './app-register.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-app-register',
@@ -7,7 +8,7 @@ import { AppRegisterService } from './app-register.service';
   styleUrls: ['./app-register.component.scss']
 })
 export class AppRegisterComponent implements OnInit{
-  constructor(private RegisterData : AppRegisterService){}
+  constructor(private RegisterData : AppRegisterService, private route : Router){}
   ngOnInit(): void {
       this.RegisterData.register().subscribe(data=>{
         console.log(data)
@@ -16,7 +17,7 @@ export class AppRegisterComponent implements OnInit{
   registeUser(registerData:any){
     this.RegisterData.addUser(registerData).subscribe(user=>{
       try {
-        console.log(user)
+       this.route.navigate(["/signin"])
       } catch (error) {
         alert("something went wrong")
       }

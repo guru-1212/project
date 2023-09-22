@@ -35,6 +35,24 @@
       "email": "balika@gmail.com",
       "password": "Balika",
       "id": 6
+    },
+    {
+      "name": "sreedhar",
+      "email": "sreedhar@gmail.com",
+      "password": "sreedhar",
+      "id": 7
+    },
+    {
+      "name": "pavan",
+      "email": "pavan@gmail.com",
+      "password": "pavan",
+      "id": 8
+    },
+    {
+      "name": "pavan",
+      "email": "p@gmail.com",
+      "password": "p123",
+      "id": 9
     }
   ],
   "comments": [
