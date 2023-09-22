@@ -36,9 +36,23 @@ import { NavbarHeaderComponent } from './navBar/navbar-header/navbar-header.comp
 
 
 const routes: Routes = [
-  { path: 'signin', component: SignInComponent },
+  { path: '', component: SignInComponent },
+  { path: 'register', component: AppRegisterComponent },
+  { path: 'Mobiles', component: MobilesComponent },
+  { path: 'inputValPractice', component: InputTypesChangeComponent },
+  { path: 'FakestoreAPI', component: FakestoreAPIComponent },
+  { path: 'PostAPI', component: PostMethodAPIComponent },
+  { path: 'for_loop_practice', component: ForLoopPracticeComponent },
   {
     path: 'Dashbord', component: NavbarHeaderComponent, children: [
+      // -------- Tools Router LINKS ------------->
+      { path: 'Age_calculator', component: AgeCalculateComponent },
+      { path: 'BMI_calculator', component: BMICalculateComponent },
+      { path: 'Fuel_cost_calculator', component: FuelCostCalculatorComponent },
+      { path: 'Unit_translator', component: UnitConvertComponent },
+      // --------------------------------------------->
+      { path: 'Balika_practice', component: APIPracticeComponent },
+      { path: '', component: DefaultHomeComponent },
       { path: 'Multable', component: ParentComponent },
       { path: 'About', component: AboutComponentComponent },
       { path: 'Cube', component: CubeGeneratorComponent },
@@ -50,12 +64,6 @@ const routes: Routes = [
       { path: 'SubstractionGame', component: SubstractionGameComponent },
       { path: 'Tools', component: ToolsComponent },
       { path: 'Practice', component: PracticeComponent },
-      { path: 'Mobiles', component: MobilesComponent },
-      { path: 'inputValPractice', component: InputTypesChangeComponent },
-      { path: 'FakestoreAPI', component: FakestoreAPIComponent },
-      { path: 'PostAPI', component: PostMethodAPIComponent },
-      { path: 'for_loop_practice', component: ForLoopPracticeComponent },
-      { path: 'register', component: AppRegisterComponent },
       {
         path: 'CRUD_studentData', component: StudentDataComponent, children: [
           {
@@ -63,27 +71,18 @@ const routes: Routes = [
               { path: 'next_student', component: NextStudentComponent }
             ]
           },
-    
-          // {path:'CRUD_studentData/editstudent' , component:EditStudentComponent},
           { path: 'liststudent', component: StudentListComponent },
           { path: 'register', component: RegisterStudentComponent },
           { path: 'LoginStudent', component: LoginStudentComponent }
         ]
       }
-
     ]
   },
-
-
-  // -------- Tools Router LINKS ------------->
-  { path: 'Age_calculator', component: AgeCalculateComponent },
-  { path: 'BMI_calculator', component: BMICalculateComponent },
-  { path: 'Fuel_cost_calculator', component: FuelCostCalculatorComponent },
-  { path: 'Unit_translator', component: UnitConvertComponent },
-  // --------------------------------------------->
-  { path: 'Balika_practice', component: APIPracticeComponent },
-  { path: '', component: AppRegisterComponent }
-];
+ 
+     
+     
+  
+]
 
 
 @NgModule({

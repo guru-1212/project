@@ -53,6 +53,12 @@
       "email": "p@gmail.com",
       "password": "p123",
       "id": 9
+    },
+    {
+      "name": "inspire",
+      "email": "inspire@gmail.com",
+      "password": "Inspire",
+      "id": 10
     }
   ],
   "comments": [
