@@ -1,24 +1,30 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="button-container">
-                <button class="btn btn-primary custom-button" routerLink="Age_calculator">Age Calculator</button>
+<div class="row">
+    <div class="col-md-4 container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="button-container">
+                    <button class="btn btn-primary custom-button" routerLink="Age_calculator">Age Calculator</button>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="button-container">
-                <button class="btn btn-secondary custom-button" routerLink="BMI_calculator"> BMI calculator</button>
+            <div class="col-md-12">
+                <div class="button-container">
+                    <button class="btn btn-secondary custom-button" routerLink="BMI_calculator"> BMI calculator</button>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="button-container">
-                <button class="btn btn-warning custom-button" routerLink="Fuel_cost_calculator"> Fuel Cost Calculator</button>
+            <div class="col-md-12">
+                <div class="button-container">
+                    <button class="btn btn-warning custom-button" routerLink="Fuel_cost_calculator"> Fuel Cost Calculator</button>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="button-container">
-                <button class="btn btn-warning custom-button" routerLink="Unit_translator"> Unit Translator </button>
+            <div class="col-md-12">
+                <div class="button-container">
+                    <button class="btn btn-warning custom-button" routerLink="Unit_translator"> Unit Translator </button>
+                </div>
             </div>
         </div>
     </div>
+    <div class="col-md-8 container">
+        <router-outlet></router-outlet>
+    </div>
 </div>
+<!-- <router-outlet></router-outlet> -->

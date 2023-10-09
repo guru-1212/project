@@ -33,6 +33,7 @@ import { NextStudentComponent } from './practice/student-data/add-student/next-s
 import { AppRegisterComponent } from './App_register/app-register/app-register.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { NavbarHeaderComponent } from './navBar/navbar-header/navbar-header.component';
+import { FakestoreServicesService } from './practice/fakestore-services.service';
 
 
 const routes: Routes = [
@@ -46,10 +47,7 @@ const routes: Routes = [
   {
     path: 'Dashbord', component: NavbarHeaderComponent, children: [
       // -------- Tools Router LINKS ------------->
-      { path: 'Age_calculator', component: AgeCalculateComponent },
-      { path: 'BMI_calculator', component: BMICalculateComponent },
-      { path: 'Fuel_cost_calculator', component: FuelCostCalculatorComponent },
-      { path: 'Unit_translator', component: UnitConvertComponent },
+
       // --------------------------------------------->
       { path: 'Balika_practice', component: APIPracticeComponent },
       { path: '', component: DefaultHomeComponent },
@@ -62,26 +60,42 @@ const routes: Routes = [
       { path: 'MultiplicationGame', component: MultiplicatingGameComponent },
       { path: 'DivisionGame', component: DivisionGameComponent },
       { path: 'SubstractionGame', component: SubstractionGameComponent },
-      { path: 'Tools', component: ToolsComponent },
-      { path: 'Practice', component: PracticeComponent },
       {
-        path: 'CRUD_studentData', component: StudentDataComponent, children: [
+        path: 'Tools', component: ToolsComponent, children: [
+          { path: 'Age_calculator', component: AgeCalculateComponent },
+          { path: 'BMI_calculator', component: BMICalculateComponent },
+          { path: 'Fuel_cost_calculator', component: FuelCostCalculatorComponent },
+          { path: 'Unit_translator', component: UnitConvertComponent },
+        ]
+      },
+      {
+        path: 'Practice', component: PracticeComponent, children: [
           {
-            path: 'addstudent', component: AddStudentComponent, children: [
-              { path: 'next_student', component: NextStudentComponent }
+            path: 'CRUD_studentData', component: StudentDataComponent, children: [
+              {
+                path: 'addstudent', component: AddStudentComponent, children: [
+                  { path: 'next_student', component: NextStudentComponent }
+                ]
+              },
+              { path: 'liststudent', component: StudentListComponent },
+              { path: 'register', component: RegisterStudentComponent },
+              { path: 'LoginStudent', component: LoginStudentComponent }
             ]
           },
-          { path: 'liststudent', component: StudentListComponent },
-          { path: 'register', component: RegisterStudentComponent },
-          { path: 'LoginStudent', component: LoginStudentComponent }
+          {path: 'inputValPractice', component: InputTypesChangeComponent},
+          {path: "FakestoreAPI", component: FakestoreAPIComponent},
+          { path: "PostAPI", component: PostMethodAPIComponent},
+          { path: "Balika_practice", component: FakestoreServicesService},
+          { path: "for_loop_practice", component:ForLoopPracticeComponent},
         ]
-      }
+      },
+
     ]
   }
- 
-     
-     
-  
+
+
+
+
 ]
 
 
