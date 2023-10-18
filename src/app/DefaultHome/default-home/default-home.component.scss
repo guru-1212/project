@@ -1,4 +1,7 @@
 .welcome-text{
+  text-shadow: 0 0 10px #00f, /* Horizontal and vertical offset, blur radius, and color */
+               0 0 20px #0ff,
+               0 0 40px #0f0;
     align-items: center;
     display: flex;
     height: 50vh;
@@ -14,23 +17,51 @@
   }
   @keyframes color_change {
     0% {
-      color: orangered;
+      color: white;
       transform: translateX(30%);  
+      text-shadow: 0 0 10px rgb(3, 71, 45), /* Horizontal and vertical offset, blur radius, and color */
+      0 0 20px rgb(224, 11, 11),
+      0 0 30px rgb(226, 8, 8);
     }
     25% {
-      color: black;
+      color: white;
       transform: translateY(30%);  
+      transform: translateX(30%);
+      text-shadow: 
+        0 0 10px rgb(3, 71, 45),
+        0 0 20px rgb(224, 11, 11),
+        0 0 30px rgb(226, 8, 8);
     }
     50% {
-      color: green;
+      color: white;
       transform: translateX(-30%); 
+      transform: translateX(30%);
+  text-shadow: 
+    0 0 10px rgb(56, 97, 160),
+    0 0 20px rgb(255, 87, 34),
+    0 0 30px rgb(255, 193, 7);
     }
     75% {
-      color: blue;
+      color: white;
       transform: translateY(-30%); 
+      transform: translateX(30%);
+      text-shadow: 
+        0 0 10px rgb(0, 128, 0),
+        0 0 20px rgb(0, 0, 255),
+        0 0 30px rgb(255, 0, 255);
     }
     100% {
-      color: red;
+      color: white;
       transform: translateX(30%); 
+      transform: translateX(30%);
+  text-shadow: 
+    0 0 10px rgb(128, 0, 128),
+    0 0 20px rgb(255, 0, 0),
+    0 0 30px rgb(255, 255, 0);
     }
+  }
+  video{
+    width: 100%;
+    position: absolute;
+
   }

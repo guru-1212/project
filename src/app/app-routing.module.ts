@@ -55,11 +55,13 @@ const routes: Routes = [
       { path: 'About', component: AboutComponentComponent },
       { path: 'Cube', component: CubeGeneratorComponent },
       { path: 'Squre', component: SqureGeneratorComponent },
-      { path: 'Game', component: GamesComponentComponent },
-      { path: 'AdditionGame', component: GamesComponent },
-      { path: 'MultiplicationGame', component: MultiplicatingGameComponent },
-      { path: 'DivisionGame', component: DivisionGameComponent },
-      { path: 'SubstractionGame', component: SubstractionGameComponent },
+      { path: 'Game', component: GamesComponentComponent , children:[
+        { path: 'AdditionGame', component: GamesComponent },
+        { path: 'MultiplicationGame', component: MultiplicatingGameComponent },
+        { path: 'DivisionGame', component: DivisionGameComponent },
+        { path: 'SubstractionGame', component: SubstractionGameComponent },
+      ]},
+     
       {
         path: 'Tools', component: ToolsComponent, children: [
           { path: 'Age_calculator', component: AgeCalculateComponent },

@@ -2,3 +2,9 @@
 .card-main-div{
     flex-wrap: wrap;
 }
+li.active {
+    border-bottom: 2px solid red;
+  }
+li.active .nav-link{
+    color: red !important;
+}

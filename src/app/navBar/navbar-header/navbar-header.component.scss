@@ -8,6 +8,7 @@
 
 }
 button{
+  color: white !important;
     border: none !important;
     background: none;
 }
@@ -80,18 +81,18 @@ button{
   /* Standard syntax */
 @keyframes color_change {
     0% {
-      color: orangered;
+      color: white;
     }
     25% {
-      color: black;
+      color: white;
     }
     50% {
-      color: green;
+      color: white;
     }
     75% {
-      color: blue;
+      color: white;
     }
     100% {
-      color: red;
+      color: white;
     }
   }

@@ -59,6 +59,18 @@
       "email": "inspire@gmail.com",
       "password": "Inspire",
       "id": 10
+    },
+    {
+      "name": "pratik",
+      "email": "pratik@gmail.com",
+      "password": "tester",
+      "id": 11
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 12
     }
   ],
   "comments": [
