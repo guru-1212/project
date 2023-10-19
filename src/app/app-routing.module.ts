@@ -49,6 +49,7 @@ const routes: Routes = [
       // -------- Tools Router LINKS ------------->
 
       // --------------------------------------------->
+      {path:'Home_comp',component:DefaultHomeComponent},
       { path: 'Balika_practice', component: APIPracticeComponent },
       { path: '', component: DefaultHomeComponent },
       { path: 'Multable', component: ParentComponent },

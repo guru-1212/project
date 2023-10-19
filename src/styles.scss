@@ -8,3 +8,112 @@ li.active {
 li.active .nav-link{
     color: red !important;
 }
+.overflow__main{
+    height: 90vh;
+    overflow: scroll;
+}
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #397524 #DFE9EB;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #397524;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #62A34B;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #62A34B;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: white;
+
+    padding: 15px 25px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar li a:hover {
+     background-color: #555; 
+}
+
+
+.toggle-btn {
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: green;
+    border: none;
+    background: none;
+    padding: unset;
+}
+
+.content {
+    margin-left: 0;
+    transition: margin-left 0.3s;
+
+}
+
+.sidebar.open {
+    width: 250px;
+}
+.sidebar.open .toggle-btn{
+    color: white;
+}
+
+.sidebar.open .content {
+    margin-left: 250px;
+}
+.bi-list.bi-arrow-left-square::before{
+  content:"\f12e"
+}

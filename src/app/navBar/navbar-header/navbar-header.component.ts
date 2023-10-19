@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar-header.component.scss']
 })
 export class NavbarHeaderComponent {
+  isOpen = false;
 
+  toggleSidebar() {
+    this.isOpen = !this.isOpen;
+  }
 }

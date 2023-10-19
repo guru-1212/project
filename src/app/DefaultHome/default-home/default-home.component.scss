@@ -9,6 +9,20 @@
     font-weight: bold;
     font-family: cursive;
 }
+video{
+  width: 100%;
+}
+.home__main__containier{
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+.video-container{
+  position: absolute;
+}
+.about-us-main-parent{
+  position: absolute;
+}
 .welcome-text {
     animation-name: color_change;
     animation-duration: 15s;
@@ -17,51 +31,43 @@
   }
   @keyframes color_change {
     0% {
-      color: white;
-      transform: translateX(30%);  
-      text-shadow: 0 0 10px rgb(3, 71, 45), /* Horizontal and vertical offset, blur radius, and color */
-      0 0 20px rgb(224, 11, 11),
-      0 0 30px rgb(226, 8, 8);
+        color: white;
+        transform: translateX(30%);
+        text-shadow: 
+            0 0 10px rgb(3, 71, 45), 
+            0 0 20px rgb(224, 11, 11), 
+            0 0 30px rgb(226, 8, 8);
     }
     25% {
-      color: white;
-      transform: translateY(30%);  
-      transform: translateX(30%);
-      text-shadow: 
-        0 0 10px rgb(3, 71, 45),
-        0 0 20px rgb(224, 11, 11),
-        0 0 30px rgb(226, 8, 8);
+        color: white;
+        transform: translate(30%, 30%);
+        text-shadow: 
+            0 0 10px rgb(3, 71, 45), 
+            0 0 20px rgb(224, 11, 11), 
+            0 0 30px rgb(226, 8, 8);
     }
     50% {
-      color: white;
-      transform: translateX(-30%); 
-      transform: translateX(30%);
-  text-shadow: 
-    0 0 10px rgb(56, 97, 160),
-    0 0 20px rgb(255, 87, 34),
-    0 0 30px rgb(255, 193, 7);
+        color: white;
+        transform: translateX(-30%);
+        text-shadow: 
+            0 0 10px rgb(56, 97, 160), 
+            0 0 20px rgb(255, 87, 34), 
+            0 0 30px rgb(255, 193, 7);
     }
     75% {
-      color: white;
-      transform: translateY(-30%); 
-      transform: translateX(30%);
-      text-shadow: 
-        0 0 10px rgb(0, 128, 0),
-        0 0 20px rgb(0, 0, 255),
-        0 0 30px rgb(255, 0, 255);
+        color: white;
+        transform: translateY(-30%);
+        text-shadow: 
+            0 0 10px rgb(0, 128, 0), 
+            0 0 20px rgb(0, 0, 255), 
+            0 0 30px rgb(255, 0, 255);
     }
     100% {
-      color: white;
-      transform: translateX(30%); 
-      transform: translateX(30%);
-  text-shadow: 
-    0 0 10px rgb(128, 0, 128),
-    0 0 20px rgb(255, 0, 0),
-    0 0 30px rgb(255, 255, 0);
+        color: white;
+        transform: translateX(30%);
+        text-shadow: 
+            0 0 10px rgb(128, 0, 128), 
+            0 0 20px rgb(255, 0, 0), 
+            0 0 30px rgb(255, 255, 0);
     }
-  }
-  video{
-    width: 100%;
-    position: absolute;
-
-  }
+}
