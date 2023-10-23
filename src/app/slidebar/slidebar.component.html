@@ -1,0 +1,111 @@
+<div class="container mt-2">
+    <div class="row">
+        <div class="htmlCode col-md-4 text-center code__div">
+            <h3 class="text-center">Html Code</h3>
+            <span (click)="copy__text()" class="icon__copy"><i class="bi bi-copy"></i></span>
+            <textarea class="text-left" name="" id="" cols="30" rows="15">
+              
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Responsive Sidebar</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+  <button class="toggle-btn"><i class="fa-solid fa-bounce fa-bars"></i> Menu</button>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  </div>
+    <div class="content">
+    <!-- Main content goes here -->
+    </div>
+  <script src="https://kit.fontawesome.com/5c77e31da7.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
+            </textarea>
+        </div>
+        <div class="cssCode col-md-4 text-center code__div">
+            <h3 class="text-center">CSS Code</h3>
+            <span (click)="copy__text()" class="icon__copy"><i class="bi bi-copy"></i></span>
+            <textarea name="" id="" cols="30" rows="15">
+              
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+}
+.sidebar li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar li a:hover {
+     background-color: #555; 
+}
+.toggle-btn {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: green;
+    border: none;
+    background: none;
+    padding: unset;
+}
+.content {
+    margin-left: 0;
+    transition: margin-left 0.3s;
+}
+.sidebar.open {
+    width: 250px;
+}
+.sidebar.open .toggle-btn{
+    color: white;
+}   
+.sidebar.open .content {
+    margin-left: 250px;
+}
+            </textarea>
+        </div>
+        <div class="jsCode col-md-4 text-center code__div">
+            <h3 class="text-center">JS / Jquery Code</h3>
+            <span (click)="copy__text()" class="icon__copy"><i class="bi bi-copy"></i></span>
+            <textarea name="" id="" cols="30" rows="15">
+$(document).ready(function () {
+    $(".toggle-btn").click(function () {
+        $(".sidebar").toggleClass("open");
+        $(".fa-bars").toggleClass("fa-xmark")
+    });
+});
+            </textarea>
+        </div>
+    </div>
+</div>

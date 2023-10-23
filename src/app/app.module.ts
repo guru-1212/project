@@ -46,6 +46,7 @@ import { ForLoopPracticeComponent } from './practice/for-loop-practice/for-loop-
 import { NextStudentComponent } from './practice/student-data/add-student/next-student/next-student.component';
 import { AppRegisterComponent } from './App_register/app-register/app-register.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { SlidebarComponent } from './slidebar/slidebar.component';
 // import { APIServiceComponent } from './api-practice/api-service/api-service.component';
 
 
@@ -90,6 +91,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
     NextStudentComponent,
     AppRegisterComponent,
     SignInComponent,
+    SlidebarComponent,
     // APIServiceComponent,
     // FetchingDataComponent,
 

@@ -1,13 +1,13 @@
    <div class="sidebar"  [ngClass]="isOpen == true ?  'open' : ''">
         <div class="d-flex">
             <button (click)="toggleSidebar()" class="toggle-btn"><i class="bi bi-list" [ngClass]="isOpen == true ? 'bi-arrow-left-square' : '' "></i></button>
-
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><h3 class="text-light">Documentation</h3></li>
+            <li class="list__items" routerLinkActive="active li"><button class="slide__navLink"   routerLink="Slidebar">Slidebar</button></li>
+            <li class="list__items" routerLinkActive="active li"> <button class="slide__navLink"    routerLink="About">About</button></li>
+            <li class="list__items" routerLinkActive="active li"><button  class="slide__navLink"   routerLink="About">About</button></li>
+            <li class="list__items" routerLinkActive="active li"><button  class="slide__navLink"   routerLink="About">About</button></li>
         </ul>
     </div>
     <div class="content">

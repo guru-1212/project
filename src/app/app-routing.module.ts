@@ -34,6 +34,7 @@ import { AppRegisterComponent } from './App_register/app-register/app-register.c
 import { SignInComponent } from './sign-in/sign-in.component';
 import { NavbarHeaderComponent } from './navBar/navbar-header/navbar-header.component';
 import { FakestoreServicesService } from './practice/fakestore-services.service';
+import { SlidebarComponent } from './slidebar/slidebar.component';
 
 
 const routes: Routes = [
@@ -50,6 +51,7 @@ const routes: Routes = [
 
       // --------------------------------------------->
       {path:'Home_comp',component:DefaultHomeComponent},
+      {path:'Slidebar',component:SlidebarComponent},
       { path: 'Balika_practice', component: APIPracticeComponent },
       { path: '', component: DefaultHomeComponent },
       { path: 'Multable', component: ParentComponent },

@@ -96,3 +96,13 @@ button{
       color: white;
     }
   }
+  .active.li{
+    border-bottom: unset;
+    padding: 5px 15px;
+  }
+  .active.li .slide__navLink{
+    color: red !important;
+  }
+  .list__items{
+    padding: 5px 15px;
+  }
