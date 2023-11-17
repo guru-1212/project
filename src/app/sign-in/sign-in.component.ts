@@ -10,8 +10,8 @@ import { Route, Router } from '@angular/router';
 })
 export class SignInComponent {
   constructor(private userValidate: AppRegisterService , private router : Router) { }
-  email: string = ' ';
-  password: string = ' ';
+  email: string = '';
+  password: string = '';
   AllUsers: any
   SignInValidate() {
     this.userValidate.register().subscribe(users => {

@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./slidebar.component.scss']
 })
 export class SlidebarComponent {
-  copy__text(){
-    alert("text copied to clipboard")
+  html__code:string="";
+  css__code:string="";
+  js__code:string="";
+  copy__text(e:string){
+    this.css__code=e
+  }
+  copy__js__text(j:string){
+    this.js__code=j
+  }
+  copy__html__text(h:string){
+    this.html__code=h
   }
 }

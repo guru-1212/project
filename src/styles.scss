@@ -117,3 +117,21 @@ li.active .nav-link{
 .bi-list.bi-arrow-left-square::before{
   content:"\f12e"
 }
+input:focus{
+  box-shadow: unset !important;
+  border-color: black !important;
+}
+button:focus{
+  box-shadow: unset Im !important;
+}
+@media(max-width:536px){
+  .register__form{
+    width: 500px !important;
+  }
+  video{
+    display: none;
+  }
+  .Text__for__member{
+    font-size: 20px !important;
+  }
+}

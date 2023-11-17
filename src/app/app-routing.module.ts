@@ -39,6 +39,7 @@ import { SlidebarComponent } from './slidebar/slidebar.component';
 
 const routes: Routes = [
   { path: '', component: SignInComponent },
+  { path: 'signin', component: SignInComponent },
   { path: 'register', component: AppRegisterComponent },
   { path: 'Mobiles', component: MobilesComponent },
   { path: 'inputValPractice', component: InputTypesChangeComponent },
@@ -83,8 +84,8 @@ const routes: Routes = [
                 ]
               },
               { path: 'liststudent', component: StudentListComponent },
-              { path: 'register', component: RegisterStudentComponent },
-              { path: 'LoginStudent', component: LoginStudentComponent }
+              { path: 'register', component: AppRegisterComponent },
+              { path: 'LoginStudent', component: SignInComponent }
             ]
           },
           {path: 'inputValPractice', component: InputTypesChangeComponent},

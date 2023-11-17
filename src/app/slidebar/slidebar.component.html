@@ -2,8 +2,8 @@
     <div class="row">
         <div class="htmlCode col-md-4 text-center code__div">
             <h3 class="text-center">Html Code</h3>
-            <span (click)="copy__text()" class="icon__copy"><i class="bi bi-copy"></i></span>
-            <textarea class="text-left" name="" id="" cols="30" rows="15">
+            <span (click)="copy__html__text(html__code.value)" class="icon__copy"><i class="bi bi-copy"></i></span>
+            <textarea class="text-left" name="" id="" cols="30" rows="15" #html__code>
               
 <!DOCTYPE html>
 <html lang="en">
@@ -35,8 +35,8 @@
         </div>
         <div class="cssCode col-md-4 text-center code__div">
             <h3 class="text-center">CSS Code</h3>
-            <span (click)="copy__text()" class="icon__copy"><i class="bi bi-copy"></i></span>
-            <textarea name="" id="" cols="30" rows="15">
+            <span (click)="copy__text(cssCode.value)" class="icon__copy"><i class="bi bi-copy"></i></span>
+            <textarea name="" id="" cols="30" rows="15" #cssCode>
               
 body {
     margin: 0;
@@ -97,8 +97,8 @@ body {
         </div>
         <div class="jsCode col-md-4 text-center code__div">
             <h3 class="text-center">JS / Jquery Code</h3>
-            <span (click)="copy__text()" class="icon__copy"><i class="bi bi-copy"></i></span>
-            <textarea name="" id="" cols="30" rows="15">
+            <span (click)="copy__js__text(js__code.value)" class="icon__copy"><i class="bi bi-copy"></i></span>
+            <textarea name="" id="" cols="30" rows="15" #js__code>
 $(document).ready(function () {
     $(".toggle-btn").click(function () {
         $(".sidebar").toggleClass("open");
